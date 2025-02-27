@@ -26,7 +26,7 @@ class SROSMD < Oxidized::Model
     #
     # Strip uptime.
     #
-    cfg.sub! /^System Up Time.*\n/, ''
+    cfg.sub! /^ # System Up Time.*\n/, ''
     comment cfg
   end
 
